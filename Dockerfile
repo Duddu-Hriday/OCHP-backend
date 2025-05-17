@@ -1,17 +1,16 @@
-# Use official OpenJDK 17 image
 FROM openjdk:17-jdk-slim
 
-# Set working directory
 WORKDIR /app
 
-# Copy all files to the container
 COPY . .
 
-# Run Maven wrapper to build the app (skip tests for speed)
+# ✅ Add this line to make mvnw executable
+RUN chmod +x mvnw
+
+# Now build the project
 RUN ./mvnw clean package -DskipTests
 
-# Expose port 8080 (Spring Boot default)
 EXPOSE 8080
 
-# Run the packaged jar file (replace with your actual jar name)
+# Replace this with your actual jar name if needed
 CMD ["java", "-jar", "target/backend-0.0.1-SNAPSHOT.jar"]
