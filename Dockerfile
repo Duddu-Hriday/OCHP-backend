@@ -13,4 +13,5 @@ RUN ./mvnw clean package -DskipTests
 EXPOSE 8080
 
 # Replace this with your actual jar name if needed
-CMD ["java", "-jar", "target/backend-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "target/backend-0.0.1-SNAPSHOT.jar", "--server.port=8080"]
+
