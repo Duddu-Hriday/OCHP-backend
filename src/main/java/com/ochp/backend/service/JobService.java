@@ -46,5 +46,8 @@ public class JobService {
 		}
 		return applied;
 	}
+	public Job addJob(Job job) {
+		return repo.save(job);
+	}
 
 }

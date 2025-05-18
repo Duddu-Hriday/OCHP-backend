@@ -1,7 +1,6 @@
 package com.ochp.backend.model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.annotation.Id;
 @Document(collection="jobs")
 public class Job {
 	
