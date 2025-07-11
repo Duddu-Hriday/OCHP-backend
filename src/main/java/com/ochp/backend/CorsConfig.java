@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Apply CORS to all paths
-                        .allowedOrigins("https://ochp-frontend.vercel.app/") // Replace with your frontend URL
+                        .allowedOrigins("https://ochp-frontend.vercel.app") // Replace with your frontend URL
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
