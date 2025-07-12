@@ -18,7 +18,7 @@ import com.ochp.backend.model.Student;
 import com.ochp.backend.service.StudentService;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://ochp-frontend.vercel.app", allowCredentials = "true")
 @RequestMapping("/api")
 public class StudentController {
 	

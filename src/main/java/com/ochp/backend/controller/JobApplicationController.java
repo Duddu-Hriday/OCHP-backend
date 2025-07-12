@@ -16,7 +16,7 @@ import com.ochp.backend.model.JobApplication;
 import com.ochp.backend.service.JobApplicationService;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://ochp-frontend.vercel.app", allowCredentials = "true")
 @RequestMapping("/api")
 public class JobApplicationController {
 	

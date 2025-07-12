@@ -14,7 +14,7 @@ import com.ochp.backend.model.Admin;
 import com.ochp.backend.service.AdminService;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://ochp-frontend.vercel.app", allowCredentials = "true")
 @RequestMapping("/admin")
 public class AdminController {
 	@Autowired
